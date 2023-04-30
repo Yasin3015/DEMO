@@ -58,6 +58,20 @@ body {
 
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    position: fixed;
+    z-index: 100;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(33, 35, 49);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(206, 185, 103);
+}
+
 /* ///////////////////start nav//////////////////// */
 .nav {
     width: 100%;
@@ -228,7 +242,7 @@ body {
     }
     .contact{
         flex-direction: column;
-        align-items: flex-end !important;
+        align-items: flex-start !important;
         justify-content: flex-start;
         width: 100%;
     }
@@ -474,25 +488,6 @@ body {
     border-radius: 5px;
     color: rgb(206, 185, 103);
 }
-.sin .s-in-btns{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.sin .s-in-btns button{
-    width: 45%;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 20px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    box-sizing: border-box;
-    text-transform: capitalize;
-}
 
 @media (max-width: 767px) {
     .sin form {
@@ -548,7 +543,7 @@ body {
     font-size: 20px;
     height: fit-content;
 }
-.sign-up-form button{
+.sign-up-form .submit-btn{
     width: 100%;
     margin-top: 20px;
     background-color: rgb(33, 35, 49);
@@ -575,4 +570,35 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 20px;
+}
+/* ============= google and face buttons ========== */
+.text-center{
+    font-size: 20px;
+    margin: 30px auto;
+}
+.text-center .reg-and-s-in{
+    text-transform: uppercase;
+    color: rgb(206, 185, 103);
+}
+.s-in-btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.s-in-btns button{
+    width: 49%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+.s-in-btns button i{
+    margin-right: 10px;
 }
