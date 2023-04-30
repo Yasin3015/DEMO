@@ -71,6 +71,10 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: rgb(206, 185, 103);
 }
+.selectpicker{
+    overflow: hidden !important;
+    background-color: rgb(223, 223, 223);
+}
 
 /* ///////////////////start nav//////////////////// */
 .nav {
@@ -376,7 +380,7 @@ body {
 
     .nav nav .links ul li a {
         width: 100% !important;
-        color: rgb(70, 70, 70);
+        color: white;
     }
 
     .nav nav .links ul li a:hover {
